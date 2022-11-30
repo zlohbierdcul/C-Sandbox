@@ -17,12 +17,17 @@ Matrix::Matrix(int z, int s)
 }
 
 Matrix::~Matrix() {
+    cout << "Matrix ";
+    Matrix::ausgabe();
+    cout << " wird zerstört" << endl;
     // std::cout << "Ich bin ein dekonstruktor" << std::endl;
 }
 
 
 void Matrix::ausgabe() {
+    cout << "( ";
     for (int zeile = 0; zeile <= m_zeilen; zeile++) {
         cout << m_element[zeile] << " ";    
     }
+    cout << ")";
 }

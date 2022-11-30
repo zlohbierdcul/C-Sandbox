@@ -6,7 +6,11 @@
 using namespace std;
 
 int main() {
-
+    // Fragen 1.
+    // Erwartet 3
+    // Tatsächlich 6
+    // Erfolgen bei Zerstörung auf dem Heap und bei Methodenaufrufen mit 2DVector als parameter.
+    
     Matrix matrix = Matrix();
     matrix.ausgabe();
     cout << endl;
@@ -25,4 +29,11 @@ int main() {
     
     cout << endl;
 
+    Vector2d z = Vector2d(-3, 1);
+    Vector2d w = Vector2d();
+
+    a.addiere(z);
+    a.ausgabe();
+
+    cout << endl;
 }
