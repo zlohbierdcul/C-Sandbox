@@ -20,20 +20,35 @@ int main() {
     Vector2d c = Vector2d();
 
     c.addiere(a);
+    cout << "c : ";
     c.ausgabe();
     cout << endl;
+
     b.addiere(c);
+    cout << "b : ";
     b.ausgabe();
     cout << endl;
+
     cout << b.betrag() << endl;
-    
-    cout << endl;
 
     Vector2d z = Vector2d(-3, 1);
     Vector2d w = Vector2d();
 
-    a.addiere(z);
-    a.ausgabe();
 
+    a.addiere(z);
+    cout << "a : ";
+    a.ausgabe();
     cout << endl;
+
+    w.addiere(z);
+    cout << "w : ";
+    w.ausgabe();
+    cout << endl;
+
+    w.addiere(b);
+    cout << "b : ";
+    w.ausgabe();
+    cout << endl;
+
+
 }
