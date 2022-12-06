@@ -46,9 +46,26 @@ int main() {
     cout << endl;
 
     w.addiere(b);
-    cout << "b : ";
+    cout << "w : ";
     w.ausgabe();
     cout << endl;
 
+    Vector2d u = Vector2d(1,2);
+    u.kopiereIn(&w);
+    cout << "w : ";
+    w.ausgabe();
+    cout << endl;
 
+    u.kopiereIn(&a);
+    cout << "a : ";
+    a.ausgabe();
+    cout << endl;
+
+    tausche(&z, &a);
+    cout << "z : ";
+    z.ausgabe();
+    cout << endl;
+    cout << "a : ";
+    a.ausgabe();
+    cout << endl;
 }
