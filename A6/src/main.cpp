@@ -7,9 +7,9 @@ using namespace std;
 
 int main() {
     // Fragen 1.
-    // Erwartet 3
+    // Erwartet 4
     // Tatsächlich 6
-    // Erfolgen bei Zerstörung auf dem Heap und bei Methodenaufrufen mit 2DVector als parameter.
+    // Erfolgen bei Zerstörung auf dem Heap und bei Methodenaufrufen mit Objektinstanzen als parameter.
     
     Matrix matrix = Matrix();
     matrix.ausgabe();
