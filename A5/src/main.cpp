@@ -24,5 +24,4 @@ int main() {
     cout << b.betrag() << endl;
     
     cout << endl;
-
 }

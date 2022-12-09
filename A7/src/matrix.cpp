@@ -3,9 +3,13 @@
 
 using namespace std;
 
+int Matrix::counter = 0;
+
 Matrix::Matrix() 
     : m_zeilen(1), m_spalten(2)
 {
+    Matrix::counter++;
+    cout << counter << endl;
     for (int zeile = 0; zeile <= m_zeilen; zeile++) {
         m_element[zeile] = 0;
     }
@@ -14,13 +18,17 @@ Matrix::Matrix()
 Matrix::Matrix(int z, int s) 
     : m_zeilen(z), m_spalten(s)
 {
+    Matrix::counter++;
+    cout << counter << endl;
 }
 
 Matrix::~Matrix() {
-    cout << "Matrix ";
-    Matrix::ausgabe();
-    cout << " wird zerstört" << endl;
-    // std::cout << "Ich bin ein dekonstruktor" << std::endl;
+    Matrix::counter--;
+    cout << counter << endl;
+    // cout << "Matrix ";
+    // Matrix::ausgabe();
+    // cout << " wird zerstört" << endl;
+    std::cout << "Ich bin ein dekonstruktor" << std::endl;
 }
 
 
