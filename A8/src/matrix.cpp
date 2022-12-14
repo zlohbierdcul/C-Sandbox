@@ -5,20 +5,21 @@ using namespace std;
 
 int Matrix::counter = 0;
 
-Matrix::Matrix() 
-    : m_zeilen(1), m_spalten(2)
-{
-    Matrix::counter++;
-    // cout << "Counter: ";
-    // cout << counter << endl;
-    for (int zeile = 0; zeile <= m_zeilen; zeile++) {
-        m_element[zeile] = 0;
-    }
-}
+// Matrix::Matrix() 
+//     : m_zeilen(1), m_spalten(2)
+// {
+//     Matrix::counter++;
+//     // cout << "Counter: ";
+//     // cout << counter << endl;
+//     for (int zeile = 0; zeile <= m_zeilen; zeile++) {
+//         m_element[zeile] = 0;
+//     }
+// }
 
 Matrix::Matrix(int z, int s) 
     : m_zeilen(z), m_spalten(s)
 {
+    m_element = new float[z*s];
     Matrix::counter++;
     // cout << "Counter: ";
     // cout << counter << endl;
@@ -40,7 +41,7 @@ void Matrix::ausgabe() {
     for (int zeile = 0; zeile <= m_zeilen; zeile++) {
         cout << m_element[zeile] << " ";    
     }
-    cout << ")" << endl;
+    cout << ")";
 }
 
 int Matrix::getCounter() {

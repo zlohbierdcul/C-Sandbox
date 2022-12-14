@@ -3,14 +3,14 @@
 
 class Matrix {
     public:
-        Matrix();
+        //Matrix();
         Matrix(int z, int s);
         virtual ~Matrix();
         virtual void ausgabe();
         static int getCounter();
     protected:
         int m_zeilen, m_spalten;
-        float m_element[2];    
+        float* m_element;    
     private:
         static int counter;
 };

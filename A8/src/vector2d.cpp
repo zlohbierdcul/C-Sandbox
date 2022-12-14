@@ -5,12 +5,13 @@
 
 using namespace std;
 
-Vector2d::Vector2d() {
-    m_element[0] = 0;
-    m_element[1] = 0;
-}
+// Vector2d::Vector2d() {
+//     m_element[0] = 0;
+//     m_element[1] = 0;
+// }
 
-Vector2d::Vector2d(int a, int b) {
+Vector2d::Vector2d(int a, int b)
+{
     m_element[0] = a;
     m_element[1] = b;
 }
@@ -23,6 +24,7 @@ void Vector2d::addiere(Vector2d v2d) {
 void Vector2d::ausgabe() {
     cout << "Vector2d: ";
     Matrix::ausgabe();
+    cout << endl;
 }
 
 void Vector2d::kopiereIn(Vector2d *zielvar) {
