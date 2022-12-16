@@ -3,7 +3,6 @@
 
 class Matrix {
     public:
-        //Matrix();
         Matrix(int z, int s);
         virtual ~Matrix();
         virtual void ausgabe();

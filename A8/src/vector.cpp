@@ -2,6 +2,18 @@
 #include <math.h>
 #include <limits>
 
+using namespace std;
+
+Vector::Vector(int dimension)
+  : Matrix(dimension, 1)
+{
+  vector = (int *) malloc (sizeof(int) * dimension);
+}
+
+Vector::~Vector() {
+  
+}
+
 float Vector::betrag()
 {
   return sqrt(skalarprodukt(*this));

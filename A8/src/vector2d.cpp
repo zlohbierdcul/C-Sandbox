@@ -11,6 +11,7 @@ using namespace std;
 // }
 
 Vector2d::Vector2d(int a, int b)
+    : Vector(2)
 {
     m_element[0] = a;
     m_element[1] = b;

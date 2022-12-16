@@ -12,6 +12,7 @@ public:
   float betrag();
   float skalarprodukt(Vector v);
   float winkel(Vector v);
+  int* vector;
 };
 
 #endif
