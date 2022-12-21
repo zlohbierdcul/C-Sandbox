@@ -5,14 +5,18 @@
 
 using namespace std;
 
-// Vector2d::Vector2d() {
-//     m_element[0] = 0;
-//     m_element[1] = 0;
-// }
-
-Vector2d::Vector2d(int a, int b)
+Vector2d::Vector2d()
     : Vector(2)
 {
+    // cout << "Vector2d Standart Konstruktor" << endl;
+    m_element[0] = 0.0;
+    m_element[1] = 0.0;
+}
+
+Vector2d::Vector2d(float a, float b)
+    : Vector(2)
+{
+    // cout << "Vector2d Konstruktor a, b" << endl;
     m_element[0] = a;
     m_element[1] = b;
 }

@@ -1,13 +1,15 @@
+#include <iostream>
 #include "vector.h"
 #include <math.h>
 #include <limits>
 
 using namespace std;
 
+
 Vector::Vector(int dimension)
   : Matrix(dimension, 1)
 {
-  vector = (int *) malloc (sizeof(int) * dimension);
+  // cout << "Vector Konstruktor dimension" << endl;
 }
 
 Vector::~Vector() {

@@ -7,19 +7,20 @@
 using namespace std;
 
 int main() {
-    Vector2d* array[3];
+    Vector2d array[3];
+    // Der Matrix Konstruktor, der Vector Konstruktor und der Vector2d Standartkonstruktor
+    // alle jeweils 3 mal
+
+    cout << endl;
+    cout << endl;
 
     Vector2d* varr[2];
 
     for (int i = 1; i <= 2; i++) {
-        varr[i-1] = new Vector2d(i,i+1);
+        varr[i-1] = new Vector2d((float)i,(float)i+1);
         varr[i-1]->ausgabe();
     }
 
     varr[0]->addiere(*varr[1]);
     varr[0]->ausgabe();
-
-    delete varr[0];
-    delete varr[1];
-
 }

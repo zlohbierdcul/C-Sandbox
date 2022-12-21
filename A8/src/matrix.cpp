@@ -8,18 +8,18 @@ int Matrix::counter = 0;
 Matrix::Matrix(int z, int s) 
     : m_zeilen(z), m_spalten(s)
 {
-    m_element = (float *) malloc ((z * s) * sizeof(float));
-    Matrix::counter++;
+    // cout << "Matrix Konstruktor z*s" << endl;
+    m_element = new float[s*z];
 }
 
 Matrix::~Matrix() {
-    Matrix::counter--;
+    delete[] m_element;
 }
 
 
 void Matrix::ausgabe() {
     cout << "( ";
-    for (int zeile = 0; zeile <= m_zeilen; zeile++) {
+    for (int zeile = 0; zeile < m_zeilen; zeile++) {
         cout << m_element[zeile] << " ";    
     }
     cout << ")";

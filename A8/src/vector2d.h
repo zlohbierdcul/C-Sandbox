@@ -5,7 +5,8 @@
 
 class Vector2d : public Vector {
     public:
-        Vector2d(int a, int b);
+        Vector2d();
+        Vector2d(float a, float b);
         void ausgabe();
         void addiere(Vector2d v2d); 
         void kopiereIn(Vector2d *zielvar);

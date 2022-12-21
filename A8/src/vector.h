@@ -7,12 +7,11 @@ class Vector :
   public Matrix
 {
 public:
-  Vector(int m);
+  Vector(int dimension);
   virtual ~Vector();
   float betrag();
   float skalarprodukt(Vector v);
   float winkel(Vector v);
-  int* vector;
 };
 
 #endif
