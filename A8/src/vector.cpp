@@ -1,7 +1,7 @@
 #include <iostream>
-#include "vector.h"
 #include <math.h>
 #include <limits>
+#include "vector.h"
 
 using namespace std;
 

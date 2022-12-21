@@ -2,7 +2,6 @@
 #include "matrix.h"
 #include "vector.h"
 #include "vector2d.h"
-#include <array>
 
 using namespace std;
 
