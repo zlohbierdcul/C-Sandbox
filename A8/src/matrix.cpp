@@ -3,8 +3,6 @@
 
 using namespace std;
 
-int Matrix::counter = 0;
-
 Matrix::Matrix(int z, int s) 
     : m_zeilen(z), m_spalten(s)
 {
@@ -23,8 +21,4 @@ void Matrix::ausgabe() {
         cout << m_element[zeile] << " ";    
     }
     cout << ")";
-}
-
-int Matrix::getCounter() {
-    return counter;
 }

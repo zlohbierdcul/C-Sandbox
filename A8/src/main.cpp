@@ -11,8 +11,7 @@ int main() {
     // Der Matrix Konstruktor, der Vector Konstruktor und der Vector2d Standartkonstruktor
     // alle jeweils 3 mal
 
-    cout << endl;
-    cout << endl;
+
 
     Vector2d* varr[2];
 
